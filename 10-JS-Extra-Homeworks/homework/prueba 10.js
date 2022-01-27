@@ -42,3 +42,16 @@
     return item.split('').reverse().join('')}))
 console.log(phrase) */
 ////////////////////////////////////////////////////////////////////////////////////////////
+/*
+var array1=[2,3,4,5]
+var array2=[1,5,4,8,3,3,3,3]
+let union=array1.concat(array2)
+var interseccion=union.filter((numero,posicion,numeros)=>{
+  return posicion!==numeros.indexOf(numero);
+})
+console.log(interseccion);
+*/
+
+var impar=[1,5,9,2,4,6]
+var sumaImpar=impar.reduce((a,c)=>(c%2 !== 0 ? a+c:a),0)
+console.log(sumaImpar)
